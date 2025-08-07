@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Mood Journal 😊</h1>
+  <form id="moodForm">
+    <label for="mood">Choose your mood:</label>
+    <select id="mood" required>
+      <option value="">--Select--</option>
+      <option value="😊">Happy</option>
+      <option value="😔">Sad</option>
+      <option value="😡">Angry</option>
+      <option value="😴">Tired</option>
+      <option value="😕">Confused</option>
+    </select>
+    <label for="note">Note:</label>
+    <input type="text" id="note" placeholder="Why do you feel this way?" />
+    <button type="submit">Save Entry</button>
+  </form>
+  <div id="entries"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
